@@ -1,0 +1,196 @@
+@import "style-2.css";
+@import "startup_styles.css";
+@import "slides.css";
+/* global */
+img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0.5rem 0;
+}
+
+/* sections */
+section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+section#portfolio {
+  height: 65vh;
+}
+
+section#clients,
+section#products,
+section#portfolio {
+  display: block;
+}
+
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.section-bg {
+  background-color: #1a1814;
+}
+
+.intro,
+.img {
+  flex: 1;
+}
+
+.intro {
+  padding: 2rem;
+}
+
+.hero .photo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero .photo img {
+  height: 60vh;
+}
+
+@media screen and (max-width: 576px) {
+  .header-wrapper {
+    padding: 0 1rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero .photo {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero .intro {
+    padding: 1rem 2rem;
+  }
+
+  .hero .intro h1 {
+    font-size: 3rem;
+  }
+
+  .hero .photo img {
+    height: 30vh;
+  }
+}
+
+/* Counter */
+
+.conteneur {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  line-height: 1.7;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+[class*="bi-"] {
+  font-size: 4rem;
+}
+
+.number {
+  font-family: "Mitr", "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  font-size: 2rem;
+}
+
+.bi-emoji-smile {
+  font-size: 1.5rem !important;
+}
+.bi-star-fill {
+  font-size: 1rem;
+}
+
+.bi-tools {
+  color: #b92b27;
+}
+
+.bi-clipboard-data {
+  color: #34465d;
+}
+
+.bi-person-hearts {
+  color: #27ae60;
+}
+
+@media screen and (max-width: 576px) {
+  .conteneur {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    padding: 1rem 0;
+  }
+}
+
+.stars {
+  margin: 0;
+}
+
+/* scroll indicator */
+#scroll-indicator {
+  position: fixed;
+  top: 60px;
+  height: 10px;
+  width: 0%;
+  background-color: #cda45e;
+  z-index: 100;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #343434;
+  color: #f3f3f3;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.between {
+  width: 100%;
+}
+
+.between > ul {
+  margin-left: auto;
+}
+
+@keyframes animateLeft {
+  from {
+    opacity: 0.2;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes animateRight {
+  from {
+    opacity: 0.2;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.hero .hero__photo img {
+  height: 60vh;
+}

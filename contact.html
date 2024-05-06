@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./vendor/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./fonts/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./vendor/bootstrap/bootstrap.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <title>Elda | Contact</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper header-wrapper">
+        <nav class="between">
+          <div>
+            <a href="/" class="logo">Elda</a>
+          </div>
+          <ul class="navbar py-auto">
+            <li>
+              <a href="index.html#about" class="navbar__link">A propos</a>
+            </li>
+            <li>
+              <a href="index.html#services" class="navbar__link">Services</a>
+            </li>
+            <li><a href="products.html" class="navbar__link">Produits</a></li>
+            <li>
+              <a href="index.html#clients" class="navbar__link">Clients</a>
+            </li>
+            <li><a href="contact.html" class="navbar__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="scroll-indicator"></div>
+    <main>
+      <div class="wrapper">
+        <section class="hero" id="home">
+          <div class="intro" style="animation: animateLeft 1s ease">
+            <h1 style="font-size: 3.85em;">Besoin de nous ?</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              voluptas voluptates tenetur ad officiis ea corporis quos
+              voluptatibus vitae illo corrupti quas, libero eaque sint soluta,
+              eos natus, similique asperiores.
+            </p>
+          </div>
+          <div class="photo" style="animation: animateRight 1s ease">
+            <img src="./imgs/contact/iphone.png" alt="" />
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <div class="intro">
+            <div class="text-center mb-5">
+              <h1>Nous Contacter</h1>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-4">
+                <div class="info">
+                  <div class="address">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Adresse:</h4>
+                    <p>47 Lufira, Kinshasa</p>
+                  </div>
+
+                  <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>kanda@Elda.com</p>
+                  </div>
+
+                  <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Téléphone:</h4>
+                    <p>+243 859 488 555</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 mt-5 mt-lg-0">
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  role="form"
+                  class="php-email-form"
+                >
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                        placeholder="Votre nom"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Votre Email"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Votre Message"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="5"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Chargement</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Votre message a été envoyé. Merci!
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="submit">Envoyer</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>Copyright EldaTech &copy;2022</footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

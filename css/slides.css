@@ -1,0 +1,56 @@
+/* global */
+
+img {
+  width: 100%;
+}
+
+/* container and cards */
+.slides-container {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 350px);
+  grid-gap: 50px;
+  pointer-events: none;
+}
+
+.cards .card {
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+.card__content {
+  color: #4e4e4e;
+  padding: 1rem;
+}
+
+.card__content h1 {
+  margin: 0.5rem 0;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.card__content p {
+  font-size: .85rem;
+}
+
+@media screen and (max-width: 786px) {
+  .slides-container {
+    width: 700px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(6, 240px);
+  }
+}
